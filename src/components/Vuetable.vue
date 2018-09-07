@@ -890,6 +890,8 @@ export default {
       this.currentPage = 1    // reset page index
       if (this.apiMode || this.dataManager) {
         this.loadData()
+      }else{
+        this.$emit(this.eventPrefix + 'orderby', field, event)  // orderby event
       }
     },
     multiColumnSort (field) {

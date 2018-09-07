@@ -450,7 +450,7 @@ export default {
           descendingIcon: 'blue chevron down icon',
           ascendingClass: 'sorted-asc',
           descendingClass: 'sorted-desc',
-          sortableIcon: '',
+          sortableIcon: 'chevron disabled sort icon',
           detailRowClass: 'vuetable-detail-row',
           handleIcon: 'grey sidebar icon',
           tableBodyClass: 'vuetable-semantic-no-top vuetable-fixed-layout',

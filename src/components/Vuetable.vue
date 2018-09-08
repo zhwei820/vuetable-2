@@ -56,7 +56,7 @@
     </thead>
     </table>
   </div>
-  <div class="vuetable-body-wrapper" :style="{height: tableHeight}">
+  <div class="vuetable-body-wrapper" :style="{height: tableHeight, 'max-height': maxTableHeight}">
     <table :class="['vuetable', css.tableClass, css.tableBodyClass]">
       <colgroup>
         <template v-for="(field, fieldIndex) in tableFields">
@@ -407,6 +407,10 @@ export default {
       }
     },
     tableHeight: {
+      type: String,
+      default: null
+    },
+    maxTableHeight: {
       type: String,
       default: null
     },

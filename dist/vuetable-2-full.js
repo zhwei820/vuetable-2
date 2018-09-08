@@ -3020,6 +3020,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       type: String,
       default: null
     },
+    maxTableHeight: {
+      type: String,
+      default: null
+    },
 
     multiSortKey: {
       type: String,
@@ -5365,7 +5369,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }) : _vm._e()], 2)])])]), _vm._v(" "), _c('div', {
     staticClass: "vuetable-body-wrapper",
     style: ({
-      height: _vm.tableHeight
+      height: _vm.tableHeight,
+      'max-height': _vm.maxTableHeight
     })
   }, [_c('table', {
     class: ['vuetable', _vm.css.tableClass, _vm.css.tableBodyClass]
